@@ -46,7 +46,7 @@ body {
   justify-content: center;
   flex-direction: column;
   z-index: 999;
-  background: #ffffff;
+  background: #e3edff;
   transition: 1s;
   box-shadow: 0 0 10px black;
 }
@@ -271,7 +271,7 @@ body {
   /* border: 10px solid rgba(246, 0, 0, 0.978); */
   display: grid;
   width: 75%;
-  background: #f0ece7;
+  background: #e3edffa2;
   margin-left: auto;
   margin-right: auto;
   grid-template-columns: auto auto auto;
@@ -360,15 +360,19 @@ body {
 }
 
 .editorial {
-  background-color: #f0ece7;
+  background: #e3edffa2;
   border-radius: 20px;
   padding: 5%;
   padding-top: 3%;
   margin-top: 3%;
 }
 
-.editorial h1,
-h2 {
+.editorial h1 {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.editorial h2 {
   text-align: left;
 }
 
@@ -468,12 +472,13 @@ h2 {
 /* Psicoanalistas */
 
 .psicoanalistasContainer {
-  display: grid;
+  /* border: 1px solid #2dae21; */
+  display: flex;
+  flex-direction: column;
   width: 75%;
-  background: #f0ece7;
+  background: #c2cfe6;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: auto auto auto;
   align-items: center;
   color: rgb(0, 0, 0);
   padding-top: 7%;
@@ -481,6 +486,12 @@ h2 {
   justify-content: center;
   padding-bottom: 2%;
   border-radius: 50px;
+}
+
+.miniContainer {
+  /* border: 1px solid #2dae21; */
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .psicoanalistasContainer img {
@@ -504,11 +515,18 @@ h2 {
   align-items: center;
   margin: 20px;
   transition: 0.5s;
+  width: 300px;
 }
 
 .nombrePsicoanalista {
+  /* border: 5px solid rgb(105, 72, 189); */
   margin-top: 2%;
   font-size: 16px;
   font-weight: bold;
 }
 
+.trayectoriaPsicoanalista {
+  /* border: 5px solid rgb(105, 72, 189); */
+  font-size: 12px;
+  margin-top: 5px;
+}

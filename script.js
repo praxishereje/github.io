@@ -503,8 +503,9 @@ function academyThrottle(academycb, delay = 1000) {
   };
 }
 
-// Buttons
+// Index
 
-const opentest = function () {
-  window.open("https://leofinance.io");
+const openJoycescristo = function () {
+  window.open("articulos/1_edicion/1_joycescristo.html");
+  return false;
 };
