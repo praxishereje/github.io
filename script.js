@@ -503,9 +503,143 @@ function academyThrottle(academycb, delay = 1000) {
   };
 }
 
-// Index
+// Index Images
 
-const openJoycescristo = function () {
-  window.open("1_joycescristo.html");
+const openJoycescrito = function () {
+  window.open("01.joycescrito.html");
   return false;
 };
+
+const openApuntes = function () {
+  window.open("02.Apuntes.html");
+  return false;
+};
+
+const openKurtz = function () {
+  window.open("03.Kurtz.html");
+  return false;
+};
+
+const openPlural = function () {
+  window.open("04.Plural.html");
+  return false;
+};
+
+const openNovacion = function () {
+  window.open("05.Novacion.html");
+  return false;
+};
+
+const openSujeto = function () {
+  window.open("06.Sujeto.html");
+  return false;
+};
+
+const openClinicas = function () {
+  window.open("07.Clinicas.html");
+  return false;
+};
+
+const openPsicoanalista = function () {
+  window.open("08.Psicoanalista.html");
+  return false;
+};
+
+const openHieronymus = function () {
+  window.open("09.Hieronymus.html");
+  return false;
+};
+
+const openSinthomeOperador = function () {
+  window.open("10.SinthomeOperador.html");
+  return false;
+};
+
+const openInvencion = function () {
+  window.open("11.Invencion.html");
+  return false;
+};
+
+const openLogica = function () {
+  window.open("12.Logica.html");
+  return false;
+};
+
+const openDeterminismo = function () {
+  window.open("13.Determinismo.html");
+  return false;
+};
+
+const openHerejia = function () {
+  window.open("14.Herejia.html");
+  return false;
+};
+
+const openHacerse = function () {
+  window.open("15.Hacerse.html");
+  return false;
+};
+
+const openIncidencias = function () {
+  window.open("16.Incidencias.html");
+  return false;
+};
+
+const openSUS = function () {
+  window.open("17.SUS.html");
+  return false;
+};
+
+const openMuros = function () {
+  window.open("18.Muros.html");
+  return false;
+};
+
+const openPractica = function () {
+  window.open("19.Practica.html");
+  return false;
+};
+
+//  MAGAZINE
+
+const imgs = document.getElementById("imgs");
+const leftBtn = document.getElementById("left");
+const rightBtn = document.getElementById("right");
+
+const img = document.querySelectorAll("#imgs img");
+
+let idx = 0;
+
+let interval = setInterval(run, 2000000);
+
+function run() {
+  idx++;
+  changeImage();
+}
+
+function changeImage() {
+  if (idx > img.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = img.length - 1;
+  }
+
+  imgs.style.transform = `translateX(${-idx * 900}px)`;
+}
+
+function resetInterval() {
+  clearInterval(interval);
+  interval = setInterval(run, 2000000);
+}
+
+rightBtn.addEventListener("click", () => {
+  idx++;
+  changeImage();
+  resetInterval();
+});
+
+leftBtn.addEventListener("click", () => {
+  idx--;
+  changeImage();
+  resetInterval();
+});
