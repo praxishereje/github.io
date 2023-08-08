@@ -547,18 +547,17 @@ h2 {
 /* MAGAZINE */
 
 .image-container img {
-  height: 566px;
-  width: 733px;
+  height: 550px;
   object-fit: contain;
-  margin-right: 15px;
+  /* border: 5px solid rgb(105, 72, 189); */
 }
 
 .carousel {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  height: 596px;
-  width: 900px;
+  height: 580px;
+  width: 850px;
   overflow: hidden;
-  /* border: 5px solid rgb(105, 72, 189); */
+  /* border: 5px solid rgb(189, 72, 72); */
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
@@ -581,7 +580,7 @@ h2 {
   border: none;
   padding: 0.5rem;
   cursor: pointer;
-  width: 49.5%;
+  width: 50%;
   font-weight: bold;
 }
 
