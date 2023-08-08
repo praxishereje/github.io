@@ -584,6 +584,10 @@ h2 {
   font-weight: bold;
 }
 
+#left {
+  background-color: rgb(46, 112, 178);
+}
+
 .btn:hover {
   opacity: 0.9;
 }
