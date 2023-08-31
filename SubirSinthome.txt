@@ -1,0 +1,5 @@
+Subir:
+
+style.css
+index.html
+revista.html

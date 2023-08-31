@@ -530,97 +530,104 @@ function academyThrottle(academycb, delay = 1000) {
 // Index Images
 
 const openJoycescrito = function () {
-  window.open("01.joycescrito.html");
+  window.location.replace("01.joycescrito.html");
   return false;
 };
 
 const openApuntes = function () {
-  window.open("02.Apuntes.html");
+  window.location.replace("02.Apuntes.html");
   return false;
 };
 
 const openKurtz = function () {
-  window.open("03.Kurtz.html");
+  window.location.replace("03.Kurtz.html");
   return false;
 };
 
 const openPlural = function () {
-  window.open("04.Plural.html");
+  window.location.replace("04.Plural.html");
   return false;
 };
 
 const openNovacion = function () {
-  window.open("05.Novacion.html");
+  window.location.replace("05.Novacion.html");
   return false;
 };
 
 const openSujeto = function () {
-  window.open("06.Sujeto.html");
+  window.location.replace("06.Sujeto.html");
   return false;
 };
 
 const openClinicas = function () {
-  window.open("07.Clinicas.html");
+  window.location.replace("07.Clinicas.html");
   return false;
 };
 
 const openPsicoanalista = function () {
-  window.open("08.Psicoanalista.html");
+  window.location.replace("08.Psicoanalista.html");
   return false;
 };
 
 const openHieronymus = function () {
-  window.open("09.Hieronymus.html");
+  window.location.replace("09.Hieronymus.html");
   return false;
 };
 
 const openSinthomeOperador = function () {
-  window.open("10.SinthomeOperador.html");
+  window.location.replace("10.SinthomeOperador.html");
   return false;
 };
 
 const openInvencion = function () {
-  window.open("11.Invencion.html");
+  window.location.replace("11.Invencion.html");
   return false;
 };
 
 const openLogica = function () {
-  window.open("12.Logica.html");
+  window.location.replace("12.Logica.html");
   return false;
 };
 
 const openDeterminismo = function () {
-  window.open("13.Determinismo.html");
+  window.location.replace("13.Determinismo.html");
   return false;
 };
 
 const openHerejia = function () {
-  window.open("14.Herejia.html");
+  window.location.replace("14.Herejia.html");
   return false;
 };
 
 const openHacerse = function () {
-  window.open("15.Hacerse.html");
+  window.location.replace("15.Hacerse.html");
   return false;
 };
 
 const openIncidencias = function () {
-  window.open("16.Incidencias.html");
+  window.location.replace("16.Incidencias.html");
   return false;
 };
 
 const openSUS = function () {
-  window.open("17.SUS.html");
+  window.location.replace("17.SUS.html");
   return false;
 };
 
 const openMuros = function () {
-  window.open("18.Muros.html");
+  window.location.replace("18.Muros.html");
   return false;
 };
 
 const openPractica = function () {
-  window.open("19.Practica.html");
+  window.location.replace("19.Practica.html");
+  return false;
+};
+
+// BUTTON REGRESAR
+
+const botonRegresar = function () {
+  window.location.replace("index.html");
   return false;
 };
 
