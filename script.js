@@ -29,34 +29,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Website links
 
-const openLearn = function () {
-  window.open("learn.html");
-};
-
-const openTV = function () {
-  window.open("leoTV.html");
-  return false;
-};
-
-const openBridge = function () {
-  window.open("https://wleo.io");
-};
-
-const openLeo = function () {
-  window.open("https://leofinance.io");
-};
-
-const openCub = function () {
-  window.open("https://cubdefi.com");
-};
-
-const openPolycub = function () {
-  window.open("https://polycub.com");
-};
-
 // Scroll and show
 
-const boxes = document.querySelectorAll(".box");
+const boxes = document.querySelectorAll(".grid-item");
 
 window.addEventListener("scroll", checkBoxes);
 
@@ -72,62 +47,6 @@ function checkBoxes() {
       box.classList.add("show");
     } else {
       box.classList.remove("show");
-    }
-  });
-}
-
-const texts = document.querySelectorAll(".containerText");
-
-window.addEventListener("scroll", checkTexts);
-
-checkTexts(); // This runs the function as the first thing
-
-function checkTexts() {
-  const triggerBottom = (window.innerHeight / 10) * 9; // We will use a slightly smaller number than the current innerHeight, we can't use a fixed number because this height can change depending on the browser, zoom of the user and much more.
-
-  texts.forEach((text) => {
-    const textTop = text.getBoundingClientRect().top; // Returns a DomRect object (an object rectangle) providing information about the size of an element and its position relative to the viewport - thanks MDN.
-
-    if (textTop < triggerBottom) {
-      text.classList.add("show");
-    } else {
-      text.classList.remove("show");
-    }
-  });
-}
-
-const appbuttons = document.querySelectorAll(".appbutton");
-
-window.addEventListener("scroll", checkButtons);
-
-checkButtons(); // This runs the function as the first thing
-
-function checkButtons() {
-  const triggerBottom = (window.innerHeight / 10) * 9; // We will use a slightly smaller number than the current innerHeight, we can't use a fixed number because this height can change depending on the browser, zoom of the user and much more.
-
-  appbuttons.forEach((appbutton) => {
-    const buttonTop = appbutton.getBoundingClientRect().top; // Returns a DomRect object (an object rectangle) providing information about the size of an element and its position relative to the viewport - thanks MDN.
-
-    if (buttonTop < triggerBottom) {
-      appbutton.classList.add("show");
-    }
-  });
-}
-
-const backgrounds = document.querySelectorAll(".communityBackground");
-
-window.addEventListener("scroll", checkBackgrounds);
-
-checkBackgrounds(); // This runs the function as the first thing
-
-function checkBackgrounds() {
-  const triggerBottom = (window.innerHeight / 10) * 9; // We will use a slightly smaller number than the current innerHeight, we can't use a fixed number because this height can change depending on the browser, zoom of the user and much more.
-
-  backgrounds.forEach((background) => {
-    const backgroundTop = background.getBoundingClientRect().top; // Returns a DomRect object (an object rectangle) providing information about the size of an element and its position relative to the viewport - thanks MDN.
-
-    if (backgroundTop < triggerBottom) {
-      background.classList.add("show");
     }
   });
 }
