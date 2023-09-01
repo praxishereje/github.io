@@ -425,7 +425,10 @@ h2 {
 .miniContainer {
   /* border: 1px solid #2dae21; */
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  background: #e3edffa2;
+  gap: 2rem;
+  margin-top: 10rem;
 }
 
 .psicoanalistasContainer img {
@@ -565,36 +568,40 @@ h2 {
 } */
 
 .boton {
+  z-index: 99;
   position: absolute;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 20px;
-  padding: 20px;
-  border-radius: 15px;
+  height: 5rem;
+  width: 5rem;
+  padding: 10px;
+  border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  --c: RGB(0, 71, 142);
+  background-color: #fff;
+  --c: #fff;
 
   box-shadow: 0 0 0 0.1em inset var(--c);
-  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  /* --_g: linear-gradient(var(--c) 0 0) no-repeat;
   background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
     var(--_g) calc(200% - var(--_p, 0%)) 0%,
     var(--_g) calc(var(--_p, 0%) - 100%) 100%,
     var(--_g) calc(200% - var(--_p, 0%)) 100%;
   background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
   outline-offset: 0.1em;
-  transition: background-size 0.4s, background-position 0s 0.4s;
+  transition: background-size 0.4s, background-position 0s 0.4s; */
 }
 .boton:hover {
   --_p: 100%;
   transition: background-position 0.4s, background-size 0s;
-  color: #ffffff;
+  color: RGB(0, 71, 142);
 }
 
 .boton:active {
   box-shadow: 0 0 9e9Q inset #0009;
-  background-color: var(--c);
-  color: #fff;
+  background-color: RGB(0, 71, 142);
+  color: var(--c);
 }
 
 /* .boton:hover {
